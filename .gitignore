@@ -1,0 +1,34 @@
+.venv/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+.pytest-tmp/
+*.egg-info/
+build/
+dist/
+runs/
+.env
+.env.*
+!.env.example
+!.env.sample
+models/
+output/
+.playwright-cli/
+.cache/
+.hf-cache/
+.streamlit/secrets.toml
+.claude/settings.local.json
+.agents/skills/developing-with-streamlit
+.claude/skills/developing-with-streamlit
+*.safetensors
+pytorch_model*.bin
+adapter_model*.bin
+*.gguf
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pem
+*.key
+# Competition consent paperwork is submitted separately, not as application source.
+ASUS UGen AI League_著作財產權授權暨肖像授權同意書.docx

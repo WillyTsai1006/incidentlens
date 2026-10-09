@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "incident-diagnosis-agent"
+version = "0.1.0"
+description = "Evidence-grounded local incident diagnosis: deterministic core"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2,<3", "PyYAML>=6,<7", "psutil>=5.9,<8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+local = ["torch>=2.5,<3", "transformers>=4.46,<6"]
+ui = ["streamlit>=1.65,<2"]
+
+[tool.setuptools.packages.find]
+include = ["app*", "core*", "inference*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --basetemp=.pytest-tmp"
+markers = ["real_model: optional offline real-model integration (requires INCIDENT_MODEL_PATH)"]

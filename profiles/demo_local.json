@@ -1,0 +1,36 @@
+[
+  {
+    "id": "qwen-cpu-small",
+    "backend": "transformers-local",
+    "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "model_path": "models/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "tier": "small_model",
+    "task_types": ["hypothesis_generation"],
+    "max_context_chars": 100000,
+    "estimated_memory_mb": 8192,
+    "latency_rank": 1,
+    "quality_rank": 1,
+    "device": "cpu",
+    "execution_mode": "local",
+    "enabled": true,
+    "max_new_tokens": 512
+  },
+  {
+    "id": "b70-xpu-target-disabled",
+    "backend": "transformers-local",
+    "model_name": "Qwen/Qwen2.5-0.5B-Instruct (B70 target, unvalidated)",
+    "model_path": "models/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "tier": "small_model",
+    "task_types": ["hypothesis_generation"],
+    "max_context_chars": 100000,
+    "estimated_memory_mb": 8192,
+    "latency_rank": 1,
+    "quality_rank": 1,
+    "device": "xpu",
+    "execution_mode": "local",
+    "enabled": false,
+    "max_new_tokens": 512
+  }
+]

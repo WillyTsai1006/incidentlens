@@ -1,0 +1,18 @@
+{
+  "observed_count": 21,
+  "derived_count": 4,
+  "required_evidence": [
+    {"id": "config.yaml:service.workers", "category": "config_value", "value": 4},
+    {"id": "config.yaml:model.load_per_worker", "category": "config_value", "value": true},
+    {"id": "config.yaml:model.precision", "category": "config_value", "value": "fp16"},
+    {"id": "config.yaml:runtime.gpu_memory_limit_gb", "category": "config_value", "value": 32},
+    {"id": "inference.py:L7:worker_model_load", "category": "code_behavior", "value": "worker_model_load"},
+    {"id": "system.log:L4:memory", "category": "system_metric", "value": 28.5, "unit": "GiB"},
+    {"id": "app.log:L9:oom", "category": "log_event", "value": "allocation_failure"},
+    {"id": "app.log:L10:service_failure", "category": "log_event", "value": "service_failure"},
+    {"id": "derived:model_replicas", "category": "derived_fact", "value": 4},
+    {"id": "derived:per_worker_memory_gib", "category": "derived_fact", "value": 9.5, "unit": "GiB"},
+    {"id": "derived:projected_memory_gib", "category": "derived_fact", "value": 38.0, "unit": "GiB"},
+    {"id": "derived:exceeds_capacity", "category": "derived_fact", "value": true}
+  ]
+}

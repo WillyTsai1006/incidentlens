@@ -1,0 +1,5 @@
+2026-10-08T09:00:00Z INFO gpu_memory_used_gib=0.0
+2026-10-08T09:00:02Z INFO worker-1 started gpu_memory_used_gib=9.5
+2026-10-08T09:00:04Z INFO worker-2 started gpu_memory_used_gib=19.0
+2026-10-08T09:00:06Z INFO worker-3 started gpu_memory_used_gib=28.5
+2026-10-08T09:00:08Z ERROR worker-4 allocation failure requested_gib=9.5 free_gib=3.5

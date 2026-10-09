@@ -1,0 +1,7 @@
+{
+  "primary_kind": "duplicate_models",
+  "ranked_kinds": ["duplicate_models", "runtime_allocation", "memory_leak"],
+  "confidence_range": [0.8, 0.95],
+  "required_missing_criterion": "process_replicas",
+  "causality_proven": false
+}
