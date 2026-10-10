@@ -15,7 +15,7 @@ local = ["torch>=2.5,<3", "transformers>=4.46,<6"]
 ui = ["streamlit>=1.65,<2"]
 
 [tool.setuptools.packages.find]
-include = ["app*", "core*", "inference*"]
+include = ["app*", "core*", "inference*", "evaluation*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -1,0 +1,7 @@
+2026-10-08T10:00:00Z INFO gpu_memory_used_gib=0.0
+2026-10-08T10:00:02Z INFO worker-1 started gpu_memory_used_gib=8.0
+2026-10-08T10:00:04Z INFO worker-2 started gpu_memory_used_gib=16.0
+2026-10-08T10:00:10Z INFO gpu_memory_used_gib=16.0 phase=steady_state active_workers=2
+2026-10-08T10:00:14Z INFO gpu_memory_used_gib=16.0 phase=steady_state active_workers=2
+2026-10-08T10:00:18Z INFO gpu_memory_used_gib=16.0 phase=steady_state active_workers=2
+2026-10-08T10:00:22Z ERROR request allocation failed requested_gib=20.0 free_gib=16.0

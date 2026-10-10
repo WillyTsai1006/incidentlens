@@ -80,7 +80,6 @@ def test_streamlit_missing_local_model_shows_error_no_mock(tmp_path, monkeypatch
     app = AppTest.from_file(str(UI)).run(timeout=30)
     app.button(key="load_demo").click().run()
     app.selectbox(key="mode").select("Local Transformers (real)")
-    app.text_input(key="model_path").set_value(os.environ["INCIDENT_MODEL_PATH"])
     app.text_input(key="model_path").set_value(str(tmp_path / "missing"))
     app.button(key="analyze").click().run(timeout=30)
     assert not app.exception
@@ -95,6 +94,7 @@ def test_streamlit_real_local_demo(tmp_path, monkeypatch):
     app = AppTest.from_file(str(UI)).run(timeout=30)
     app.button(key="load_demo").click().run()
     app.selectbox(key="mode").select("Local Transformers (real)")
+    app.text_input(key="model_path").set_value(os.environ["INCIDENT_MODEL_PATH"])
     app.button(key="analyze").click().run(timeout=240)
     assert not app.exception and not app.error
     run = app.session_state["run"]

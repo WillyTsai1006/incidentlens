@@ -1,0 +1,7 @@
+{
+  "primary_kind": "runtime_allocation",
+  "ranked_kinds": ["runtime_allocation", "duplicate_models", "memory_leak"],
+  "confidence_range": [0.8, 1.0],
+  "required_supported_criteria": ["oom", "batch_pressure", "runtime_timing"],
+  "causality_proven": false
+}

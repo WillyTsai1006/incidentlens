@@ -193,6 +193,28 @@ Missing GPU metrics and mock token counts are
 JSON null, never invented. See the [Phase 3 report](docs/phase3_status.md) for
 hardware, timing scopes, limitations and an archived run.
 
+## Controlled Evaluation
+
+IncidentLens correctly ranked the intended hypothesis first in three controlled
+synthetic scenarios designed around duplicate model loading, runtime allocation
+pressure, and steady-state memory growth, with mock and real local CUDA inference.
+These three cases exercise predefined hypothesis families; this is not a
+scientific benchmark or a claim of production RCA accuracy. The plain local-Qwen
+comparison and conservative source-traceability rubric are documented in
+[controlled_evaluation.md](docs/controlled_evaluation.md).
+The plain baseline produced two ambiguous cause lists and one wrong-family
+answer; its source audit matched 6/8 quotations. This measures limited source
+traceability, not production accuracy. All 220 collected tests passed across
+the default suite and separate optional offline-model tests.
+
+```powershell
+.venv/Scripts/python.exe -m evaluation.run_evaluation
+```
+
+Default evaluation uses mock inference and explicitly leaves the real baseline
+unexecuted. Reports are JSON/Markdown under `output/controlled_evaluation/mock/`;
+see the evaluation document for the optional real CUDA comparison command.
+
 ## Phase boundaries
 
 Phase 1 covers schemas, parsers, evidence repository, correlations, initial

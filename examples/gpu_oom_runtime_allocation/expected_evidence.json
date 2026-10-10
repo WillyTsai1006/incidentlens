@@ -1,0 +1,15 @@
+{
+  "observed_count": 22,
+  "derived_count": 1,
+  "required_evidence": [
+    {"id": "config.yaml:service.workers", "category": "config_value", "value": 2},
+    {"id": "config.yaml:runtime.gpu_memory_limit_gb", "category": "config_value", "value": 32},
+    {"id": "inference.py:L7:worker_model_load", "category": "code_behavior", "value": "worker_model_load"},
+    {"id": "system.log:L4:memory", "category": "system_metric", "value": 16.0, "unit": "GiB"},
+    {"id": "system.log:L6:memory", "category": "system_metric", "value": 16.0, "unit": "GiB"},
+    {"id": "app.log:L6:batch_allocation", "category": "system_metric", "value": 20.0, "unit": "GiB"},
+    {"id": "app.log:L6:batch_headroom", "category": "system_metric", "value": 16.0, "unit": "GiB"},
+    {"id": "app.log:L7:oom", "category": "log_event", "value": "allocation_failure"},
+    {"id": "app.log:L8:service_failure", "category": "log_event", "value": "service_failure"}
+  ]
+}

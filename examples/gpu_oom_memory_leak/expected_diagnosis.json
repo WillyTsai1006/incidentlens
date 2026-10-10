@@ -1,0 +1,7 @@
+{
+  "primary_kind": "memory_leak",
+  "ranked_kinds": ["memory_leak", "runtime_allocation", "duplicate_models"],
+  "confidence_range": [0.8, 1.0],
+  "required_supported_criteria": ["oom", "steady_growth", "leak_pattern"],
+  "causality_proven": false
+}

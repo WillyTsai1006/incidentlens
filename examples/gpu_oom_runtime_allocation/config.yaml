@@ -1,0 +1,11 @@
+service:
+  workers: 2
+model:
+  name: demo-4b-model
+  load_per_worker: true
+  precision: fp16
+runtime:
+  gpu_memory_limit_gb: 32
+  gpu_memory_unit: GiB
+request:
+  batch_size: 64

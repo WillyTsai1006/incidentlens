@@ -1,0 +1,8 @@
+2026-10-08T10:00:00Z INFO service starting
+2026-10-08T10:00:01Z INFO worker-1 starting
+2026-10-08T10:00:03Z INFO worker-2 starting
+2026-10-08T10:00:05Z INFO all workers ready; service startup completed
+2026-10-08T10:00:20Z INFO inference request begins batch_size=64 phase=inference
+2026-10-08T10:00:21Z INFO batch_allocation_gib=20.0 batch_headroom_gib=16.0 phase=inference
+2026-10-08T10:00:22Z ERROR CUDA out of memory: allocation failure during inference phase=inference
+2026-10-08T10:00:23Z ERROR service failed; request failed
