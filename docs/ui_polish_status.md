@@ -70,11 +70,11 @@ The browser review covered **1920x1080** and **1366x768**; the primary diagnosis
 and its score fit in the initial result viewport at both sizes. The original
 long technical tables are collapsed. Screenshots:
 
-- [CUDA result, 1920x1080](../output/playwright/incidentlens-final-cuda-1920.png)
-- [CUDA result, 1366x768](../output/playwright/incidentlens-final-cuda-1366.png)
-- [CPU result](../output/playwright/incidentlens-final-cpu-1920.png)
-- [Mock result](../output/playwright/incidentlens-final-mock-1920.png)
-- [Mock runtime: unavailable model metrics](../output/playwright/incidentlens-final-mock-runtime-1920.png)
+- CUDA result, 1920x1080 (local-only, ignored): `../output/playwright/incidentlens-final-cuda-1920.png`
+- CUDA result, 1366x768 (local-only, ignored): `../output/playwright/incidentlens-final-cuda-1366.png`
+- CPU result (local-only, ignored): `../output/playwright/incidentlens-final-cpu-1920.png`
+- Mock result (local-only, ignored): `../output/playwright/incidentlens-final-mock-1920.png`
+- Mock runtime: unavailable model metrics (local-only, ignored): `../output/playwright/incidentlens-final-mock-runtime-1920.png`
 
 The fresh CUDA browser session reported zero console errors and warnings.
 AppTest also verifies mock execution and the unavailable-CUDA warning, while
@@ -133,3 +133,5 @@ advanced settings before analyzing; show its mock label.
 - The real model must exist locally, and cold inference waits remain variable. No fake loading result or hard-coded runtime value is used.
 - Physical projector visibility, competition display scaling and a final live-stage rehearsal remain to be checked by the presenter. Browser screenshots do not replace that check.
 - Competition recording/submission and target-hardware rehearsal remain outside this UI-only task. No new phase, autonomous commands or remediation was implemented.
+
+Public curated screenshot: [recorded verification view](assets/incidentlens_demo.png).

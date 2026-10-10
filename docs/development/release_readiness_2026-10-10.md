@@ -1,3 +1,7 @@
+> Historical development audit.
+> This document predates the controlled-evaluation commit and public repository release.
+> See [README.md](../../README.md) and [docs/controlled_evaluation.md](../controlled_evaluation.md) for the current project status.
+
 # Submission readiness audit
 
 Audited 2026-10-10 (Asia/Taipei). Final Git submission audit: **PASS — READY TO

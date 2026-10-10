@@ -1,5 +1,7 @@
 # Controlled three-case evaluation
 
+Public snapshot: [sanitized real CUDA results](results/controlled_evaluation_cuda.md) and [JSON](results/controlled_evaluation_cuda.json). Original replay artifacts remain local and ignored.
+
 ## Objective
 
 Check whether the existing IncidentLens evidence → candidate hypotheses →

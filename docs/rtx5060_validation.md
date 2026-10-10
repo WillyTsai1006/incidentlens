@@ -3,7 +3,7 @@
 **Historical hardware-validation benchmark, not current live-demo performance.**
 For the newer independent RTX demo measurements (37.16 s end-to-end / 32.40 s
 generation, with a 59.16 / 33.48 s fresh-server first run), see
-[final_demo_polish.md](final_demo_polish.md). See [the release audit](../RELEASE_READINESS.md)
+[final_demo_polish.md](final_demo_polish.md). See [the historical release audit](development/release_readiness_2026-10-10.md)
 for the latest fresh-environment check. The 8.851-second result below remains an
 archived single observation and is not a current performance claim.
 

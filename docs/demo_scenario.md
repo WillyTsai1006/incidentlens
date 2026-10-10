@@ -67,7 +67,7 @@ demo-polish run took 37.16 s end-to-end / 32.40 s generation; fresh-server first
 analysis took 59.16 / 33.48 s. These are observations, not guarantees. CPU
 130–295 s and the original 8.85 s CLI GPU benchmark are historical records.
 See [the measurement report](final_demo_polish.md) and
-[release audit](../RELEASE_READINESS.md) before rehearsing a recording.
+[historical release audit](development/release_readiness_2026-10-10.md) before rehearsing a recording.
 
 Suggested three-minute recording: show inputs and the 38 GiB projection; inspect
 the observed evidence and conservative relations; compare all three hypotheses

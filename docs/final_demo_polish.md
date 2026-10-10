@@ -1,7 +1,7 @@
 # Final competition-demo polish and latency investigation
 
 For the subsequent fresh-environment installation and submission audit, see
-[RELEASE_READINESS.md](../RELEASE_READINESS.md). Generated screenshots and raw
+[historical release audit](development/release_readiness_2026-10-10.md). Generated screenshots and raw
 records below are local audit evidence under ignored `output/` and `runs/`;
 they are not automatically included in a public source checkout. Curate demo
 materials separately when publishing.
@@ -157,10 +157,10 @@ The actual browser shows real CUDA execution, the unchanged ranking, 5 supported
 default-collapsed sidebar were reviewed at 1366x768. Runtime memory is an actual
 post-call snapshot, not peak VRAM. Screenshots:
 
-- [Home capabilities](../output/playwright/final-polish-home-1366.png)
-- [Final diagnosis, 1366x768](../output/playwright/final-polish-diagnosis-1366.png)
-- [Verification count metrics](../output/playwright/final-polish-verification-1920.png)
-- [Final live RTX runtime and GPU memory snapshot](../output/playwright/final-polish-runtime-1920.png)
+- Home capabilities (local-only, ignored): `../output/playwright/final-polish-home-1366.png`
+- Final diagnosis, 1366x768 (local-only, ignored): `../output/playwright/final-polish-diagnosis-1366.png`
+- Verification count metrics (local-only, ignored): `../output/playwright/final-polish-verification-1920.png`
+- Final live RTX runtime and GPU memory snapshot (local-only, ignored): `../output/playwright/final-polish-runtime-1920.png`
 
 The fresh release browser session reported **zero console errors and warnings**.
 
@@ -172,3 +172,5 @@ Launch from the repository root:
 
 Physical competition display/projector rehearsal and B70 execution remain
 unvalidated. Model inference is local, and no remediation is executed.
+
+Public curated screenshot: [recorded verification view](assets/incidentlens_demo.png).
